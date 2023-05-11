@@ -1,4 +1,9 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.85)), url(<%="http://source.unsplash.com/featured/?movies&#{rand(1000)}"%>)">
+</div>
 <div class="container">
+  <div class="form-new-list">
+    <%= render "form" %>
+  </div>
   <h2>My Movie Lists</h2>
   <div class="cards">
     <% @lists.each do |list|%>

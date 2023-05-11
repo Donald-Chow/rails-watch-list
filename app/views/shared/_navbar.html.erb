@@ -1,12 +1,12 @@
 <div class="navbar" data-controller="navbar">
   <div class="dropdown">
-    <%# <button class="dropbtn"
-    data-action="click->navbar#dropNavbar">Dropdown
-      <i class="fa fa-caret-down"></i>
-    </button> %>
-    <%# <div class="dropdown-content" id="myDropdown" data-navbar-target="myDropdown"> %>
-    <%= link_to "My List", lists_path %>
-    <%= link_to "New List", new_list_path %>
+    <button class="dropbtn"
+    data-action="click->navbar#dropNavbar">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown" data-navbar-target="myDropdown">
+      <%= link_to "My List", lists_path %>
+      <%= link_to "New List", new_list_path %>
+    </div>
   </div>
 </div>
-<%# </div> %>

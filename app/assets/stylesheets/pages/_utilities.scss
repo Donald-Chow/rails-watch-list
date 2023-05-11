@@ -1,3 +1,22 @@
 a {
   text-decoration: none;
 }
+
+body {
+  background-color: $gray;
+}
+
+.container {
+  position: relative;
+}
+
+input,
+select,
+textarea {
+  color: $light-gray;
+}
+
+textarea:focus,
+input:focus {
+  color: $medium-gray;
+}

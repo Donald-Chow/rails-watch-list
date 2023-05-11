@@ -1,4 +1,4 @@
 <%= simple_form_for @list do |f| %>
-  <%= f.input :name %>
-  <%= f.submit %>
+  <%= f.input :name,label:false, placeholder: "New List Name", class: 'form input'%>
+  <%= f.submit class: 'form-btn'%>
 <% end %>

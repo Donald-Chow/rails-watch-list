@@ -3,6 +3,7 @@ class ListsController < ApplicationController
 
   def index
     @lists = List.all
+    @list = List.new
   end
 
   def show
@@ -23,7 +24,7 @@ class ListsController < ApplicationController
     end
   end
 
-private
+  private
 
   def set_list
     @list = List.find(params[:id])
