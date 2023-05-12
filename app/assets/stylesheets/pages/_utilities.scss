@@ -2,8 +2,12 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  color: $light-gray;
+}
+
 body {
-  background-color: $gray;
+  background-color: $dark-gray;
 }
 
 .container {
@@ -13,7 +17,7 @@ body {
 input,
 select,
 textarea {
-  color: $light-gray;
+  color: $medium-gray;
 }
 
 textarea:focus,
