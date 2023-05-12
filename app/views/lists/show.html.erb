@@ -7,7 +7,7 @@
     <div class="cards">
       <% @list.bookmarks.each do |bookmark| %>
         <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= bookmark.movie.poster_url %>)">
-          <%= bookmark.movie.title %>
+          <%#= bookmark.movie.title %>
           <%= link_to bookmark_path(bookmark), class: "card-delete",
           data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
             <i class="fa-solid fa-trash-can"></i>
