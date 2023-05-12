@@ -1,8 +1,30 @@
 .form-new-list {
-  width: 200px;
-  position: absolute;
+  width: 100%;
   right: -24px;
   margin: 16px;
+  background-color: $medium-gray;
+  padding: 16px;
+  color: $white;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 350px;
+}
+
+.form-new-movie {
+  width: 100%;
+  right: -24px;
+  background-color: $medium-gray;
+  padding: 16px;
+  color: $white;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 380px;
+}
+
+.form-control,
+.form-select {
+  font-size: 10px;
+  padding: 0.15rem 0.25rem;
 }
 
 .form-input {
@@ -10,6 +32,6 @@
 }
 
 .form-btn {
-  background-color: $medium-gray;
+  background-color: $light-gray;
   border-radius: 3px;
 }

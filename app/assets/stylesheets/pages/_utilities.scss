@@ -1,9 +1,23 @@
 a {
   text-decoration: none;
+  color: $white;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+h1 {
+  color: $white;
+  font-weight: 900;
+  // margin-top: 200px;
+  // margin-left: 80px
+  margin: auto;
 }
 
 h2 {
   color: $light-gray;
+  margin: 16px;
 }
 
 body {
@@ -17,7 +31,7 @@ body {
 input,
 select,
 textarea {
-  color: $medium-gray;
+  color: $gray;
 }
 
 textarea:focus,

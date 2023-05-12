@@ -8,15 +8,21 @@
   color: white;
   font-size: 24px;
   font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   position: relative;
 }
 
 .cards-main {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  grid-gap: 16px;
+}
+
+.cards-index {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
   grid-gap: 16px;
 }
 
@@ -28,10 +34,10 @@
 
 .card-form {
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   padding: 16px;
   height: 380px;
-  position:sticky;
+  position: sticky;
   top: 0px;
 }
 

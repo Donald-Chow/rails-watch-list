@@ -2,7 +2,7 @@
   // overflow: hidden;
   background-color: transparent;
   font-family: Arial, Helvetica, sans-serif;
-  // position: sticky;
+  position: sticky;
   position: absolute;
   top: 0px
 }
@@ -36,17 +36,17 @@
 .navbar a:hover,
 .dropdown:hover .dropbtn,
 .dropbtn:focus {
-  background-color: $dark-gray;
+  background-color: $medium-gray;
   border-radius: 3px;
-  opacity: 0.1;
+  opacity: 0.8;
   transition: 0.1s;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: $dark-gray;
-  opacity: 0.1;
+  background-color: $medium-gray;
+  opacity: 0.8;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
