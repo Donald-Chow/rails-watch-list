@@ -1,11 +1,11 @@
 class BookmarksController < ApplicationController
   before_action :set_bookmark, only: [:destroy]
 
-  def new
-    @bookmark = Bookmark.new
-    @list = List.find(params[:list_id])
-    @collection = Movie.all
-  end
+  # def new
+  #   @bookmark = Bookmark.new
+  #   @list = List.find(params[:list_id])
+  #   @collection = Movie.all
+  # end
 
   def create
     ## likely need debugging
@@ -14,10 +14,11 @@ class BookmarksController < ApplicationController
     @bookmark = Bookmark.new(bookmark_params)
     @list = List.find(params[:list_id])
     @bookmark.list = @list
+    @movies = Movie.where.not(id: @list.movies).order(title: :asc)
     if @bookmark.save
       redirect_to list_path(@list)
     else
-      render :new, status: :unprocessable_entity
+      render template: 'lists/show', status: :unprocessable_entity
     end
   end
 

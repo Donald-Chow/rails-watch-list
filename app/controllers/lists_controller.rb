@@ -9,18 +9,19 @@ class ListsController < ApplicationController
   def show
     set_list
     @bookmark = Bookmark.new
+    @movies = Movie.where.not(id: @list.movies).order(title: :asc)
   end
 
-  def new
-    @list = List.new
-  end
+  # def new
+  #   @list = List.new
+  # end
 
   def create
     @list = List.new(list_params)
     if @list.save
       redirect_to list_path(@list)
     else
-      render :new, status: :unprocessable_entity
+      render :index, status: :unprocessable_entity
     end
   end
 
