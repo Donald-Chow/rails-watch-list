@@ -3,5 +3,5 @@ class Movie < ApplicationRecord
   validates :title, presence: true, uniqueness: true
   validates :overview, presence: true
 
-  has_many :bookmarks, foreign_key: 'wl1190_bookmark_id'
+  has_many :bookmarks, foreign_key: 'wl1190_movie_id'
 end
