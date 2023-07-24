@@ -88,6 +88,9 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
+  # Raise an error on page load if there are pending migrations.
+  config.active_record.migration_error = false
+
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
