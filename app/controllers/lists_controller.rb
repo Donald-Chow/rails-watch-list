@@ -12,9 +12,9 @@ class ListsController < ApplicationController
     @movies = Movie.where.not(id: @list.movies).order(title: :asc)
   end
 
-  # def new
-  #   @list = List.new
-  # end
+  def new
+    @list = List.new
+  end
 
   def create
     @list = List.new(list_params)
